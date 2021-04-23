@@ -8,10 +8,15 @@ mebsuta_django_api. Check out the project's [documentation](http://bestnewkevin.
 # Prerequisites
 
 - [Docker](https://docs.docker.com/docker-for-mac/install/)  
+- Built on sqlite3 :)
+- Create a django.env file with info from someone on the viz team
+- Local Testing, add a db.sqlite3 file from azure blob storage to /db
+- or create local volume
+- EX:/Users/nguyenk1/Documents/dockertests/djangodat:/code/mebsuta_django/db
 
 # Local Development
 
-Start the dev server for local development:
+Start the dev server for local development with hot reloading :):
 ```bash
 docker-compose up
 ```
