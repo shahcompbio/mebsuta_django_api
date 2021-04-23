@@ -13,7 +13,6 @@ services:
                ./manage.py runserver 0.0.0.0:8888"
     volumes:
       - .:/code # <--  THIS line enables hot code reloading!
-      - /Users/nguyenk1/Documents/dockertests/djangodat:/code/mebsuta_django/db
     ports:
       - "8888:8888"
 
