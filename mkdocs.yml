@@ -1,0 +1,12 @@
+site_name: mebsuta_django
+site_description: mebsuta_django_api
+repo_url: https://github.com/bestnewkevin/mebsuta_django_api
+site_dir: site
+copyright: Copyright &copy; 2020, <a href="https://github.com/bestnewkevin">bestnewkevin</a>.
+dev_addr: 0.0.0.0:8001
+
+nav:
+  - Home: 'index.md'
+  - API:
+    - Authentication: 'api/authentication.md'
+    - Users: 'api/users.md'

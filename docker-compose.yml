@@ -1,0 +1,27 @@
+version: "2"
+
+services:
+  django:
+    container_name: mebsuta-db-django
+    restart: always
+    env_file:
+      - django.env
+    image: django
+    build: ./
+    command: >
+      bash -c "./manage.py migrate &&
+               ./manage.py runserver 0.0.0.0:8888"
+    volumes:
+      - .:/code # <--  THIS line enables hot code reloading!
+      - /Users/nguyenk1/Documents/dockertests/djangodat:/code/mebsuta_django/db
+    ports:
+      - "8888:8888"
+
+  #documentation:
+  #restart: always
+  #build: ./
+  #command: "mkdocs serve"
+  #volumes:
+  #  - ./:/code
+  #ports:
+  #  - "8881:8881"
